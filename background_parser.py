@@ -36,9 +36,9 @@ for i, folder in enumerate(bg_dir_L):
     path_H = join(curr_dir, bg_dir_H[i])
     files_L = os.listdir(folder)
     files_H = os.listdir(bg_dir_H[i])
-    for i, file_L in enumerate(files_L):
+    for j, file_L in enumerate(files_L):
         file_L = join(path_L, file_L)
-        file_H = join(path_H, files_H[i])
+        file_H = join(path_H, files_H[j])
         data = rf_data_parse([file_L, file_H])
         data_norm = rf_data_parse([file_L, file_H], normalize=True)
         bg_dataset.append(data)
