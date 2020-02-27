@@ -2,3 +2,5 @@ data
 .vscode
 .ipynb_checkpoints
 
+background_rf_LH.npy
+*.npy

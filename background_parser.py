@@ -27,6 +27,8 @@ join = os.path.join
 
 bg_dir_H = ["RF Data_00000_H", "FR Data_00000_H2"]
 bg_dir_L = ["RF Data_00000_L1", "RF Data_00000_L2"]
+bg_dir_H = list(map(lambda x: join("data", x), bg_dir_H))
+bg_dir_L = list(map(lambda x: join("data", x), bg_dir_L))
 bg_dataset = []
 bg_dataset_norm = []
 

@@ -27,6 +27,8 @@ join = os.path.join
 
 drone_dir_H = ["RF Data_10011_H", "RF Data_10111_H"]
 drone_dir_L = ["RF Data_10011_L", "RF Data_10111_L"]
+drone_dir_H = list(map(lambda x: join("data", x), drone_dir_H))
+drone_dir_L = list(map(lambda x: join("data", x), drone_dir_L))
 drone_dataset = []
 drone_dataset_norm = []
 
