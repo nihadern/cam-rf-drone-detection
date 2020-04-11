@@ -4,3 +4,4 @@ data
 
 background_rf_LH.npy
 *.npy
+training_checkpoint.h5
